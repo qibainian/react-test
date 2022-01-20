@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello_react</title>
+</head>
+<body>
+    <div id="text"></div>
+
+    <!-- 先 -->
+    <script src="../js/react.development.js"></script>
+    <!-- 后 -->
+    <script src="../js/react-dom.development.js"></script>
+
+    <script src="../js/babel.min.js"></script>
+
+    <!-- babel -->
+    <script type="text/babel">
+        /* 创建虚拟DOM　<h1>hello react</h1>不用加引号 */
+        const VDOM = <h1>hello react</h1>
+        /* 渲染虚拟DOM */
+        ReactDOM.render(VDOM,document.getElementById('text'))
+    </script>
+</body>
+</html>
