@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数式组件</title>
+</head>
+<body>
+    <div id="text"></div>
+
+    <script src="../js/react.development.js"></script>
+    <script src="../js/react-dom.development.js"></script>
+    <script src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+        function MyComponent(){
+            return <h2>我是函数定义的组件，适用于【简单组件】的定义</h2>
+        }
+        
+        ReactDOM.render(<MyComponent />,document.getElementById('text'))
+        /*
+            1.react解析组件标签，找到MyComponent组件
+            2.发现组件是使用函数定义的，即调用该函数，并将返回的虚拟DOM转为真实DOM呈现在页面中
+        */
+    </script>
+</body>
+</html>
